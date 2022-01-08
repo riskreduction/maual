@@ -5,17 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Manual for risk reduction in forestry zoning</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-</head>
+</head> -->
 
 <body>
     <div class="container">
         <div class="row">
             <div id="side-bar" class="col-md-3">
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-outline-primary text-primary" id="btn-hide-left"><i class="fa fa-angle-double-left fa-lg pr-2"></i>目次を隠す</button>
+                </div>
+
                 <ul>
                     <li>
                         <a href="#chap_1">第一章　まえがき</a>
@@ -87,6 +97,9 @@
             </div>
 
             <div id="contents" class="col-md-9">
+                <div class="d-flex justify-content-start">
+                    <button type="button" class="btn btn-primary" id="btn-show-left" style="display: none">目次を表示<i class="fa fa-angle-double-right fa-lg"></i></button>
+                  </div>
                 <h1 id="chap_1">第一章　まえがき</h1>
                 <h2 id="chap_1_1">1.1 背景　～山地災害と林業経営～</h3>
                     <p>
@@ -153,7 +166,7 @@
                         ここで、ゾーニングに関して強調しておきたい点があります。市町村スケールで作成するゾーニングの位置づけは、地域の意思（方針）を反映したCanの領域の内容であってほしいということです。変更できない前提条件であるBaseの情報はいわば検討材料ですので、それに基づくマップはまだ最終的なゾーニングではありません。一方、個々人や各々の森林区画の自由意思だけに基づくDoを集めてマップ化しただけでは、それがたとえ市町村全域のスケールであっても、本来あるべきゾーニングや計画であるとは言えません。有用な情報としてBaseを踏まえたうえで、Doの動向や要望を見ながら、それをありのまま肯定するのではなく、地域林業全体にとって災害リスクを含めたよりよい判断・方向性をまとめたCanの計画を地域で作り上げ、実行していっていただきたいと思います。
                     </p>
                     <figure>
-                        <img src="img/image006.png" alt="fig_1_3">
+                        <img src="img/image006.png" alt="fig_1_3" width="60%">
                         <figcaption>図1-3　情報収集と意思決定の流れのイメージ</figcaption>
                     </figure>
 
@@ -405,7 +418,7 @@
 揃えたこの二軸のマップを用いてゾーニングマップ（案）を作るにあたっては、林業経営や地域の災害リスク状況を勘案し、各軸がどのような場合に、どのようなゾーンに該当させるかという「ゾーニング基準」を設定する必要があります。ここでは木材生産ゾーンと土砂災害防備ゾーンの2ゾーンを設定することとし、異なる基準案に基づいた2つのゾーニング案を示しました。
                    </p>
                     <figure>
-                        <img src="img/image026.png" alt="fig_2_14">
+                        <img src="img/image026b.png" alt="fig_2_14">
                         <figcaption>図2-14　二軸を合成しての広域ゾーニングのイメージ例</figcaption>
                     </figure>
                     <p>
@@ -605,75 +618,77 @@ QGISの操作方法については、喜多耕一著「業務で使うQGIS　ver
                     </figure>
 
                     <ol>
-                        <li>
+                        <li class="case">
                             <p>事例No. 1：</p>
                             <img src="img/image050.png" alt="jirei_gujou">
                         </li>
 
-                        <li>
+                        <li class="case">
                             <p>事例No. 2：</p>
                             <img src="img/image051.png" alt="jirei_gifu">
                         </li>
 
-                        <li>
+                        <li class="case">
                             <p>事例No. 3：</p>
                             <img src="img/image052.png" alt="jirei_tottori">
                         </li>
 
-                        <li>
+                        <li class="case">
                             <p>事例No. 4：</p>
                             <img src="img/image053.png" alt="jirei_gujou2">
                         </li>
 
-                        <li>
+                        <li class="case">
                             <p>事例No. 5：</p>
                             <img src="img/image054.png" alt="jirei_harima">
                         </li>
 
-                        <li>
+                        <li class="case">
                             <p>事例No. 6：</p>
                             <img src="img/image055.png" alt="jirei_gifu2">
                         </li>
 
-                        <li>
+                        <li class="case">
                             <p>事例No. 7：</p>
                             <img src="img/image056.png" alt="jirei_shinkumi">
                         </li>
 
-                        <li>
+                        <li class="case">
                             <p>事例No. 8：</p>
                             <img src="img/image057.png" alt="jirei_minamiaiki">
                         </li>
 
-                        <li>
+                        <li class="case">
                             <p>事例No. 9：</p>
                             <img src="img/image058.png" alt="jirei_akita">
                         </li>
 
-                        <li>
+                        <li class="case">
                             <p>事例No. 10：</p>
                             <img src="img/image059.png" alt="jirei_yuzawa">
                         </li>
 
-                        <li>
+                        <li class="case">
                             <p>事例No. 11：</p>
                             <img src="img/image006.png" alt="gifu_kanrishi">
                         </li>
 
-                        <li>
+                        <li class="case">
                             <p>事例No. 12：</p>
                             <img src="img/image061.png" alt="jirei_gujou3">
                         </li>
 
-                        <li>
+                        <li class="case">
                             <p>事例No. 13：</p>
                             <img src="img/image062.png" alt="forest_worker">
                         </li>
-                        <li>
+
+                        <li class="case">
                             <p>事例No. 14：</p>
                             <img src="img/image063.png" alt="jirei_kitaharima">
                         </li>
                         <hr>
+                    </ol>
                         <h1 id="refferences">出典・引用文献</h1>
                         <ul>
                             <li>
@@ -706,12 +721,55 @@ QGISの操作方法については、喜多耕一著「業務で使うQGIS　ver
                             <li>多田泰之（2020）災害リスクへの対応（田中和博・吉田茂二郎・白石則彦・松村直人編　森林計画学入門. 朝倉書店）</li>
                             <li>多田泰之（2021）林業と国土保全の両立を目指して（2）─完　─林地の災害リスクの基礎知識─. 山林 1641:34-43</li>
                         </ul>
-                    </ol>
+                        <h1  id="original_document">本サイトについて</h1>
+                        <p>
+                            本サイトは、平成28年～令和2年度農林水産省委託プロジェクト・
+                            農林水産分野における気候変動対応のための研究開発・
+                            課題名：16781381「山地災害リスクを低減する技術の開発」
+                            の研究成果普及のためのマニュアルとして作成した下記のドキュメント</p>
+                            <p>
+                                山地災害リスクを考慮した森林計画の手引き　第２版<br>
+                                作成者：災害低減共同研究機関<br>
+                                作成日：2021年2月1日 最終更新日：2021年11月15日<br>
+                                編者：斎藤仁志・當山啓介<br>
+                            </p>
+                        <p>
+                            をWebで参照するために作成したものです。マニュアル本体をご覧になる場合は
+                            <a href="https://play.google.com/store/books/details?id=9qlNEAAAQBAJ">Google Play Books</a>のサイト（無料）からダウンロードしてください。
+                        </p>
+     
+
+                            
+                        
+
             </div>
         </div>
     </div>
-
-
 </body>
+<script>//<![CDATA[
+    $(document).on('click', '#btn-hide-left', function() {
+      // 左 d-none // 右 col-12
+      $('#side-bar')
+        .removeClass('col-12 col-md-6')
+        .addClass('d-none');
+      $('#contents')
+        .removeClass('d-none d-md-block col-md-6')
+        .addClass('col-12');
+      $('#btn-show-left').show();
+      $('#btn-hide-left').hide();
+    });
+
+    $(document).on('click', '#btn-show-left', function() {
+      // 左 col-12 col-md-6 // 右 d-none d-md-block col-md-6
+      $('#side-bar')
+        .addClass('col-12 col-md-6')
+        .removeClass('d-none');
+      $('#contents')
+        .addClass('d-none d-md-block col-md-6')
+        .removeClass('col-12');
+        $('#btn-show-left').hide();
+        $('#btn-hide-left').show();
+    });
+  //]]></script>
 
 </html>

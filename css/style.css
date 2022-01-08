@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
 
+html, body { height: 100%; }
+
 #side-bar {
     padding: 0.5em 1em;
     margin: 2em 0;
@@ -13,10 +15,14 @@
 }
 
 #contents {
-    overflow: auto;
+    height: 100%;
 }
 
 h1, h2, h3, h4, h5 {
     margin: 10px;
     font-family: 'Noto Sans JP', sans-serif;
+}
+
+.case > img{
+    width:70%;
 }
